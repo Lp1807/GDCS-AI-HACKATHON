@@ -1,8 +1,9 @@
 import random
 
 import chromadb
+from chromadb.api.models import Collection
 
-from core.backend.src.model import Paragraph, QueryResult
+from core.backend.src.model import Paragraph
 
 
 class ChromaDB:
@@ -16,8 +17,11 @@ class ChromaDB:
     def create_collection(self, collection_name: str):
         self.client.create_collection(collection_name)
 
+    def get_collection(self, collection_name: str) -> Collection:
+        return self.client.get_or_create_collection(collection_name)
+
     def add_paragraphs(self, collection_name: str, paragraphs: list[Paragraph]):
-        collection = self.client.get_collection(collection_name)
+        collection = self.client.get_or_create_collection(collection_name)
         documents = [paragraph.content for paragraph in paragraphs]
         metadatas = [paragraph.metadata.model_dump() for paragraph in paragraphs]
         ids = [str(random.random()*(i+1)*100) for i in range(len(documents))]
@@ -25,6 +29,6 @@ class ChromaDB:
 
     def query(self, collection_name: str, query: str) -> str:
         collection = self.client.get_collection(collection_name)
-        result: QueryResult = collection.query(query_texts=[query], n_results=2)
+        result: dict = collection.query(query_texts=[query], n_results=2)
         print(result)
         return result["documents"][0][0]
