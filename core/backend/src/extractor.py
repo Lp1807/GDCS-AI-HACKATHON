@@ -6,12 +6,12 @@ class Extractor:
     @staticmethod
     def pdf_to_string(input_pdf_path: str) -> str:
         pdf_doc = fitz.open(input_pdf_path)
-        text = ""
+        text = []
 
         print("Extracting text from PDF...")
         for i in tqdm(range(len(pdf_doc))):
             page = pdf_doc[i]
-            text += page.get_text()
+            text.append(page.get_text())
         print("Done.")
 
         pdf_doc.close()

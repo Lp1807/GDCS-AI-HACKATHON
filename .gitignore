@@ -1,3 +1,10 @@
 __pycache__/**
 /core/frontend/node_modules/
 /core/frontend/.angular/
+core/backend/src/__pycache__/cleaner.cpython-312.pyc
+core/backend/src/__pycache__/consts.cpython-312.pyc
+core/backend/src/__pycache__/extractor.cpython-312.pyc
+core/backend/src/__pycache__/gptconnector.cpython-312.pyc
+core/backend/src/__pycache__/consts.cpython-312.pyc
+core/backend/src/__pycache__/consts.cpython-312.pyc
+core/backend/src/__pycache__/consts.cpython-312.pyc
