@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "+gerry"
+version = "0.1.0"
+description = "Learning tool enhanced with LLMs"
+authors = ["Bonvini, Calabrò, Gennaro, Pagano"]
+license = ""
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
