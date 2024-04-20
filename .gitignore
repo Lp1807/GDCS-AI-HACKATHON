@@ -1,0 +1,3 @@
+__pycache__/**
+/core/frontend/node_modules/
+/core/frontend/.angular/
