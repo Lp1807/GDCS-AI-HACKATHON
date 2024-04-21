@@ -21,6 +21,6 @@ with "Paris" being the correct one, the output must be like this:
   "contextIDs": ["123", "434", "224", "143"]
 }
 
-where the contextIDs field is {ids}
+where the contextIDs field are exactly the following: {ids}
 
 
