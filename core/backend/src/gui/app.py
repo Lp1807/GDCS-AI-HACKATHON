@@ -14,17 +14,8 @@ avatar = f'https://robohash.org/{user_id}?bgset=bg2'
 
 # Functions
 def send_message() -> None:
-    extracted_text = extract_text_from_pdf()
-    cleaned_text = clean_text(extracted_text)
+    cleaned_text = "Gesù ti ascolta."
     add_message_to_history(cleaned_text)
-
-
-def extract_text_from_pdf() -> str:
-    return PDF2Text.pdf_to_string(TEST_PDF_LOCATION)
-
-def clean_text(text: str) -> str:
-    gpt_connector = GPTConnector()
-    return gpt_connector.clean(text).content
 
 
 def add_message_to_history(text: str) -> None:
