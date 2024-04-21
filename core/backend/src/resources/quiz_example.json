@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": {
+      "A": "Rome",
+      "B": "Paris",
+      "C": "Brussels",
+      "D": "Sidney"
+    },
+    "correctOption": "B",
+    "contextIDs": [
+      "123",
+      "434",
+      "224",
+      "143"
+    ]
+  },
+  {
+    "question": "Who is the current pope?",
+    "options": {
+      "A": "John Cena",
+      "B": "Mouadh Ltifi",
+      "C": "Pietro Morcavallo",
+      "D": "Francesco"
+    },
+    "correctOption": "D",
+    "contextIDs": [
+      "565",
+      "098",
+      "114",
+      "678"
+    ]
+  },
+  {
+    "question": "Which team is gonna win the GDCS HACK AI competition?",
+    "options": {
+      "A": "Th3_Cl0wN$",
+      "B": "Loser team 1",
+      "C": "Loser team 2",
+      "D": "Loser team 3"
+    },
+    "correctOption": "A",
+    "contextIDs": [
+      "666",
+      "124",
+      "069",
+      "420"
+    ]
+  }
+]
