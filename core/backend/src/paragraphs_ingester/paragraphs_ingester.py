@@ -2,10 +2,11 @@ import json
 import os
 
 from connectors import gpt_connector, chromadb
-from consts import RESOURCES_LOCATION
+from consts import RESOURCES_LOCATION, TEST_PDF_SHORT_LOCATION
 from paragraphs_ingester.utils.cleaner import Cleaner
 from paragraphs_ingester.utils.paragraphs_adapter import ParagraphsAdapter
 from paragraphs_ingester.utils.pdf2text import PDF2Text
+from quizzer.quizzer import Quizzer
 
 
 class ParagraphsIngester:
@@ -27,12 +28,11 @@ class ParagraphsIngester:
                 continue
 
         # save for debugging purposes
-        with open(os.path.join(RESOURCES_LOCATION, "pippo.csv"), "w") as f:
+        with open(os.path.join(RESOURCES_LOCATION, "extracted_paragraphs.csv"), "w") as f:
             for p in pydantic_paragraphs:
                 row = str(p) + "\n"
                 f.write(row)
 
         chromadb.create_collection(collection_name=pdf_name)
         chromadb.add_paragraphs(collection_name=pdf_name, paragraphs=pydantic_paragraphs)
-
 

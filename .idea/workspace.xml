@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="961d8f40-617e-43ea-8dfa-4c4437708ab0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/frontend/src/app/models/quiz-question.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/backend/src/resources/prompts/quiz_json_example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/resources/prompts/quiz_json_example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/paragraphs_ingester.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/paragraphs_ingester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/quizzer/quizzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/quizzer/quizzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/resources/pippo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/resources/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/resources/quiz.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/backend/src/routes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/routes/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/gerryfrontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/gerryfrontend/.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/services/quiz.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/home/home.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/@angular_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/@angular_platform-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/@angular_router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/choose-topic/choose-topic.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/choose-topic/choose-topic.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/choose-topic/choose-topic.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/choose-topic/choose-topic.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/frontend/src/app/quiz/quiz.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/quiz/quiz.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/frontend/src/app/quiz/quiz.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/quiz/quiz.component.ts" afterDir="false" />
     </list>
@@ -84,7 +88,7 @@
       <recent name="$PROJECT_DIR$/core/backend/src/database" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.home">
+  <component name="RunManager" selected="Python.main">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GDCS-AI-HACKATHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,6 +155,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="paragraphs_ingester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GDCS-AI-HACKATHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src/paragraphs_ingester" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/paragraphs_ingester.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_quizzer.TestQuizzer.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GDCS-AI-HACKATHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,28 +192,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_random_context_creator.TestRandomContextCreator.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="GDCS-AI-HACKATHON" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_random_context_creator.TestRandomContextCreator.test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.paragraphs_ingester" />
         <item itemvalue="Python.home" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests for test_quizzer.TestQuizzer.test" />
-        <item itemvalue="Python tests.Python tests for test_random_context_creator.TestRandomContextCreator.test" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +238,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$.coverage" NAME=" Coverage Results" MODIFIED="1713663194091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/tests" />
-    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$main.coverage" NAME="main Coverage Results" MODIFIED="1713663227733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src" />
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$paragraphs_ingester.coverage" NAME="paragraphs_ingester Coverage Results" MODIFIED="1713695360173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/paragraphs_ingester" />
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$main.coverage" NAME="main Coverage Results" MODIFIED="1713695600271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src" />
     <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$gui.coverage" NAME="gui Coverage Results" MODIFIED="1713634840660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src" />
     <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$app.coverage" NAME="app Coverage Results" MODIFIED="1713663766258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/gui" />
     <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$home.coverage" NAME="home Coverage Results" MODIFIED="1713664077476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/gui" />

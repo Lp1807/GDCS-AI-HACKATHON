@@ -45,10 +45,10 @@ async def upload_file(file: UploadFile = File(...)):
         return JSONResponse(content={"error": str(e)}, status_code=500)
 
 
-@app.get("/genQuiz/")
-async def gen_quiz():
+@app.get("/genQuiz/{collection_name}")
+async def gen_quiz(collection_name: str):
         quizzer = Quizzer(chromadb, gpt_connector)
-        pdf_name = str(file_path).split("/")[-1]
+        pdf_name = str(collection_name).split("/")[-1]
         print("Pdf name: ", pdf_name)
         quizzer.generate_and_save_quiz(pdf_name=pdf_name)
 

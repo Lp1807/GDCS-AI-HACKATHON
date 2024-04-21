@@ -1,11 +1,132 @@
-{
-    "question": "What is the main tech stack used by William Bonvini in his Senior Software Engineer role at Sky Italia?",
+[{
+    "question": "Which planet is known as the Red Planet?",
     "options": {
-        "A": "MongoDB, Ruby, React, Unity",
-        "B": "GCP, Python, FastAPI, YoloV7, OpenCV, Angular, Scala, Neo4J",
-        "C": "Java, R, TensorFlow, Vue.js, PostgreSQL",
-        "D": "C++, C#, AWS, Flask, D3.js, Redis"
+        "A": "Venus",
+        "B": "Mars",
+        "C": "Jupiter",
+        "D": "Neptune"
     },
     "correctOption": "B",
-    "contextIDs": ["2795.967627819878", "57.242175037341305", "980.3772378740832"]
-}
+    "contextIDs": ["123", "434", "224", "143"]
+}, ```json
+[
+    {
+        "question": "Who was the Allied ground commander during the invasion of Sicily?",
+        "options": {
+            "A": "General George S. Patton",
+            "B": "General Douglas MacArthur",
+            "C": "General Harold Alexander",
+            "D": "General Bernard Montgomery"
+        },
+        "correctOption": "C",
+        "contextIDs": ["2544.574057413284", "3184.00054189425", "3568.3669256375324", "3790.129091447258", "3867.18849051135", "4476.186448246787", "610.8891181319349", "948.2272759876087"]
+    }
+]
+```, ```json
+[
+  {
+    "question": "In which month and year did the Allies decide to invade Sicily during World War II?",
+    "options": {
+      "A": "February 1943",
+      "B": "March 1943",
+      "C": "January 1943",
+      "D": "April 1943"
+    },
+    "correctOption": "C",
+    "contextIDs": ["2544.574057413284", "3184.00054189425", "3568.3669256375324", "3790.129091447258", "3867.18849051135", "4476.186448246787", "610.8891181319349", "948.2272759876087"]
+  }
+]
+```, ```json
+[
+    {
+        "question": "Who were the leaders that met in Casablanca in January 1943 to decide on the next target after Sicily?",
+        "options": {
+            "A": "Roosevelt, Stalin, Hirohito",
+            "B": "Churchill, Mussolini, Eisenhower",
+            "C": "Roosevelt, Churchill, Combined Chiefs of Staff",
+            "D": "Truman, MacArthur, Rommel"
+        },
+        "correctOption": "C",
+        "contextIDs": [
+            "2544.574057413284",
+            "3184.00054189425",
+            "3568.3669256375324",
+            "3790.129091447258",
+            "3867.18849051135",
+            "4476.186448246787",
+            "610.8891181319349",
+            "948.2272759876087"
+        ]
+    }
+]
+```, {
+  "question": "Which planet is closest to the Sun?",
+  "options": {
+    "A": "Mars",
+    "B": "Venus",
+    "C": "Saturn",
+    "D": "Mercury"
+  },
+  "correctOption": "D",
+  "contextIDs": ["123", "434", "224", "143"]
+}, {
+  "question": "How many planets are in the solar system?",
+  "options": {
+    "A": "6",
+    "B": "10",
+    "C": "8",
+    "D": "12"
+  },
+  "correctOption": "C",
+  "contextIDs": ["123", "434", "224", "143"]
+}, [
+  {
+    "question": "Who were the major leaders involved in the decision to target Sicily during World War II?",
+    "options": {
+      "A": "Adolf Hitler",
+      "B": "Joseph Stalin",
+      "C": "Winston Churchill",
+      "D": "Franklin D. Roosevelt"
+    },
+    "correctOption": "D",
+    "contextIDs": ["2544.574057413284", "3184.00054189425", "3568.3669256375324", "3790.129091447258"]
+  }
+], ```json
+[
+    {
+        "question": "What was the next target after the Casablanca Conference?",
+        "options": {
+            "A": "Sardinia",
+            "B": "Corsica",
+            "C": "Sicily",
+            "D": "Greece"
+        },
+        "correctOption": "C",
+        "contextIDs": ["2544.574057413284", "3184.00054189425", "3568.3669256375324", "3790.129091447258", "3867.18849051135", "4476.186448246787", "610.8891181319349", "948.2272759876087"]
+    }
+]
+```, ```json
+[
+  {
+    "question": "What was the largest and most violent armed conflict in the history of mankind?",
+    "options": {
+      "A": "The Spanish-American War",
+      "B": "World War II",
+      "C": "Vietnam War",
+      "D": "Korean War"
+    },
+    "correctOption": "B",
+    "contextIDs": ["2544.574057413284", "3184.00054189425", "3568.3669256375324", "3790.129091447258", "3867.18849051135", "4476.186448246787", "610.8891181319349", "948.2272759876087"]
+  }
+]
+```  , {
+  "question": "Which planet is known as the Red Planet?",
+  "options": {
+    "A": "Venus",
+    "B": "Mars",
+    "C": "Jupiter",
+    "D": "Saturn"
+  },
+  "correctOption": "B",
+  "contextIDs": ["123", "434", "224", "143"]
+}]
