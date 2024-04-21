@@ -11,6 +11,9 @@ D: "Sidney"
 with "Paris" being the correct one, the output must be like this:
 {example}
 
-where the contextIDs field are exactly the following: {ids}
+where the contextIDs field are exactly the following: {ids}.
+
+Do not for any reason insert syntax highlitghting and backticks to the JSON output.
+
 
 
