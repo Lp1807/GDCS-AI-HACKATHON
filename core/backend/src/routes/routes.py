@@ -36,6 +36,7 @@ async def upload_file(file: UploadFile = File(...)):
         ParagraphsExtractionPipeline.run(str(file_path))
         quizzer = Quizzer(chromadb, gpt_connector)
         pdf_name = str(file_path).split("/")[-1]
+        print("Pdf name: ", pdf_name)
         quizzer.generate_and_save_quiz(pdf_name=pdf_name)
 
         # Return success message
