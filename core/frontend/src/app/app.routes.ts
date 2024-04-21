@@ -6,9 +6,10 @@ import {ChooseTopicComponent} from "./choose-topic/choose-topic.component"; // I
 
 
 export const routes: Routes = [
-  { path: '', component: AppComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'choose_topic', component: ChooseTopicComponent}
+  { path: 'choose_topic', component: ChooseTopicComponent},
+  // Aggiungi altre rotte se necessario
+  { path: '', redirectTo: '/home', pathMatch: 'full' } // Reindirizza a HomeComponent per il percorso vuoto
 ];
 
 @NgModule({
