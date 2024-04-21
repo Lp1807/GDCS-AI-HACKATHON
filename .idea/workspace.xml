@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="961d8f40-617e-43ea-8dfa-4c4437708ab0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core/frontend/src/assets/choose-topic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GDCS-AI-HACKATHON.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_extraction_pipeline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_extraction_pipeline/paragraphs_extraction_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/paragraphs_ingester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_extraction_pipeline/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_extraction_pipeline/utils/cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/utils/cleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_extraction_pipeline/utils/paragraphs_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/utils/paragraphs_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/paragraphs_extraction_pipeline/utils/pdf2text.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/paragraphs_ingester/utils/pdf2text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/resources/pippo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/resources/pippo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/resources/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/resources/quiz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/src/routes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/src/routes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/gerryfrontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/.angular/cache/17.3.5/gerryfrontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/frontend/src/app/app.routes.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WilliamBonvini&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3beece25-c94c-4f66-9bde-497d7fe6defd" />
+        <option name="url" value="https://github.com/Lp1807/GDCS-AI-HACKATHON.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2fMemdTNS7aNs1ysVUe0UC4oFWc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/chattershuts/Desktop/GitHub/GDCS-AI-HACKATHON",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "/Users/chattershuts/Desktop/GitHub/GDCS-AI-HACKATHON/core/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/core/backend/src/routes" />
+      <recent name="$PROJECT_DIR$/core/frontend/src/app" />
+      <recent name="$PROJECT_DIR$/core/backend/src/gui" />
+      <recent name="$PROJECT_DIR$/core/backend/src/database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.home">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GDCS-AI-HACKATHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/backend/src/gui/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="home" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GDCS-AI-HACKATHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/backend/src/gui/home.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GDCS-AI-HACKATHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/backend/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_quizzer.TestQuizzer.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GDCS-AI-HACKATHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_quizzer.TestQuizzer.test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_random_context_creator.TestRandomContextCreator.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GDCS-AI-HACKATHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/backend/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_random_context_creator.TestRandomContextCreator.test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.home" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests for test_quizzer.TestQuizzer.test" />
+        <item itemvalue="Python tests.Python tests for test_random_context_creator.TestRandomContextCreator.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="961d8f40-617e-43ea-8dfa-4c4437708ab0" name="Changes" comment="" />
+      <created>1713615534000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713615534000</updated>
+      <workItem from="1713615535048" duration="7415000" />
+      <workItem from="1713626802819" duration="13927000" />
+      <workItem from="1713651491912" duration="21790000" />
+      <workItem from="1713676623325" duration="22000" />
+      <workItem from="1713676722472" duration="262000" />
+      <workItem from="1713676998365" duration="2128000" />
+      <workItem from="1713684687615" duration="779000" />
+      <workItem from="1713685470034" duration="2327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/backend/src/paragraphs_ingester/paragraphs_ingester.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$.coverage" NAME=" Coverage Results" MODIFIED="1713663194091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/tests" />
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$main.coverage" NAME="main Coverage Results" MODIFIED="1713663227733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src" />
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$gui.coverage" NAME="gui Coverage Results" MODIFIED="1713634840660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src" />
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$app.coverage" NAME="app Coverage Results" MODIFIED="1713663766258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/gui" />
+    <SUITE FILE_PATH="coverage/GDCS_AI_HACKATHON$home.coverage" NAME="home Coverage Results" MODIFIED="1713664077476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend/src/gui" />
+  </component>
+</project>

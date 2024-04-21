@@ -2,16 +2,16 @@ import json
 import os
 
 from connectors import gpt_connector, chromadb
-from consts import TEST_PDF_LOCATION, RESOURCES_LOCATION
-from paragraphs_extraction_pipeline.utils.cleaner import Cleaner
-from paragraphs_extraction_pipeline.utils.paragraphs_adapter import ParagraphsAdapter
-from paragraphs_extraction_pipeline.utils.pdf2text import PDF2Text
-from quizzer.quizzer import Quizzer
+from consts import RESOURCES_LOCATION
+from paragraphs_ingester.utils.cleaner import Cleaner
+from paragraphs_ingester.utils.paragraphs_adapter import ParagraphsAdapter
+from paragraphs_ingester.utils.pdf2text import PDF2Text
 
 
-class ParagraphsExtractionPipeline:
+class ParagraphsIngester:
     @staticmethod
     def run(pdf_path: str):
+        """ Populate Vector Database with paragraphs """
         pdf_name = pdf_path.split("/")[-1]
         chunks_of_text = PDF2Text.pdf_to_string(pdf_path)
         cleaned_text = Cleaner.clean(chunks_of_text)
