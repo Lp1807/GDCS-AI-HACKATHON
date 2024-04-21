@@ -1,65 +1,75 @@
-
 from datetime import datetime
 from typing import List, Tuple
 from uuid import uuid4
-
 from nicegui import Client, ui
+from consts import TEST_PDF_LOCATION
+from paragraphs_extraction_pipeline.utils.pdf2text import PDF2Text
+from gptconnector import GPTConnector
 
-from core.backend.src.consts import TEST_PDF_LOCATION
-from core.backend.src.paragraphs_extraction_pipeline.utils.pdf2text import PDF2Text
-from core.backend.src.gptconnector import GPTConnector
-
+# Global variables
 messages: List[Tuple[str, str, str, str]] = []
-
 user_id = str(uuid4())
 avatar = f'https://robohash.org/{user_id}?bgset=bg2'
+
+
+# Functions
+def send_message() -> None:
+    extracted_text = extract_text_from_pdf()
+    cleaned_text = clean_text(extracted_text)
+    add_message_to_history(cleaned_text)
+
+
+def extract_text_from_pdf() -> str:
+    return PDF2Text.pdf_to_string(TEST_PDF_LOCATION)
+
+def clean_text(text: str) -> str:
+    gpt_connector = GPTConnector()
+    return gpt_connector.clean(text).content
+
+
+def add_message_to_history(text: str) -> None:
+    stamp = datetime.utcnow().strftime('%X')
+    messages.append((user_id, avatar, text, stamp))
+    display_history.refresh()
 
 
 @ui.refreshable
 def display_history(own_id: str) -> None:
     for user_id, avatar, text, stamp in messages:
-        ui.chat_message(text=text, stamp=stamp, avatar=avatar, sent=own_id == user_id)
+        is_sent_by_user = own_id == user_id
+        ui.chat_message(text=text, stamp=stamp, avatar=avatar, sent=is_sent_by_user)
+    scroll_to_bottom()
+
+
+def scroll_to_bottom() -> None:
     ui.run_javascript('window.scrollTo(0, document.body.scrollHeight)')
-
-
-
 
 
 @ui.page('/')
 async def chat_home(client: Client):
+    setup_ui()
+    await client.connected()
+    display_history(user_id)
 
-    def send_message() -> None:
-        extracted = PDF2Text.pdf_to_string(TEST_PDF_LOCATION)
-        gpt_connector = GPTConnector()
-        cleaned_text = gpt_connector.clean(extracted).content
 
-        stamp = datetime.utcnow().strftime('%X')
-        messages.append((user_id, avatar, text.value, stamp))
-        messages.append((user_id, avatar, cleaned_text, stamp))
-        text.value = ''
-        display_history.refresh()
-
+def setup_ui() -> None:
     ui.add_css(r'a:link, a:visited {color: inherit !important; text-decoration: none; font-weight: 500}')
     with ui.footer().classes('bg-white'), ui.column().classes('w-full max-w-3xl mx-auto my-6'):
-        with ui.row().classes('w-full no-wrap items-center'):
-            with ui.avatar().on('click', lambda: ui.navigate.to(chat_home)):
-                ui.image(avatar)
-            text = ui.input(placeholder='message').on('keydown.enter', send_message) \
-                .props('rounded outlined input-class=mx-3').classes('flex-grow')
-        ui.markdown('simple chat app built with [NiceGUI](https://nicegui.io)') \
-            .classes('text-xs self-end mr-8 m-[-1em] text-primary')
-
-    await client.connected()  # chat_messages(...) uses run_javascript which is only possible after connecting
-    with ui.column().classes('w-full max-w-2xl mx-auto items-stretch'):
-        display_history(user_id)
+        setup_message_input()
 
 
-# Press the green button in the gutter to run the script.
+def setup_message_input() -> None:
+    with ui.row().classes('w-full no-wrap items-center'):
+        with ui.avatar().on('click', lambda: ui.navigate.to(chat_home)):
+            ui.image(avatar)
+        text_input = ui.input(placeholder='message').on('keydown.enter', send_message).props('rounded outlined input-class=mx-3').classes('flex-grow')
+    add_chat_app_description()
+
+
+def add_chat_app_description() -> None:
+    ui.markdown('Simple chat app built with [NiceGUI](https://nicegui.io)').classes('text-xs self-end mr-8 m-[-1em] text-primary')
+
+
+# Main function
 if __name__ in {"__main__", "__mp_main__"}:
     ui.run()
-
-
-
-"""
-
-"""

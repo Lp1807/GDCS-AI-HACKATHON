@@ -3,8 +3,8 @@ import random
 
 from chromadb import GetResult
 
-from core.backend.src.consts import PARAGRAPHS_PER_PAGE
-from core.backend.src.database.vectordb import ChromaDB
+from consts import PARAGRAPHS_PER_PAGE
+from database.vectordb import ChromaDB
 
 
 logger = logging.getLogger(__name__)

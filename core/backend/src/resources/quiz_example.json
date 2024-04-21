@@ -1,4 +1,5 @@
-[{
+[
+  {
     "question": "What is the capital of France?",
     "options": {
       "A": "Rome",
@@ -6,9 +7,14 @@
       "C": "Brussels",
       "D": "Sidney"
     },
-  "correctOption": "B",
-  "contextIDs": ["123", "434", "224", "143"]
-},
+    "correctOption": "B",
+    "contextIDs": [
+      "123",
+      "434",
+      "224",
+      "143"
+    ]
+  },
   {
     "question": "Who is the current pope?",
     "options": {
@@ -17,9 +23,14 @@
       "C": "Pietro Morcavallo",
       "D": "Francesco"
     },
-  "correctOption": "D",
-  "contextIDs": ["565", "098", "114", "678"]
-},
+    "correctOption": "D",
+    "contextIDs": [
+      "565",
+      "098",
+      "114",
+      "678"
+    ]
+  },
   {
     "question": "Which team is gonna win the GDCS HACK AI competition?",
     "options": {
@@ -28,7 +39,12 @@
       "C": "Loser team 2",
       "D": "Loser team 3"
     },
-  "correctOption": "A",
-  "contextIDs": ["666", "124", "069", "420"]
-}
+    "correctOption": "A",
+    "contextIDs": [
+      "666",
+      "124",
+      "069",
+      "420"
+    ]
+  }
 ]

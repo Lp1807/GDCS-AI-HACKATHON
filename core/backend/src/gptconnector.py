@@ -4,7 +4,6 @@ from openai.types.chat import ChatCompletionMessage
 from consts import SPLIT_INTO_PARAGRAPHS_PROMPT
 
 
-
 class GPTConnector:
     def __init__(self):
         self.client = OpenAI()

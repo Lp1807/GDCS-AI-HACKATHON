@@ -1,7 +1,7 @@
-from core.backend.src.consts import GENERATE_QUESTION_PROMPT
-from core.backend.src.gptconnector import GPTConnector
-from core.backend.src.quizzer.utils.random_context_creator import RandomContextCreator
-from core.backend.src.database.vectordb import ChromaDB
+from consts import GENERATE_QUESTION_PROMPT
+from gptconnector import GPTConnector
+from quizzer.utils.random_context_creator import RandomContextCreator
+from database.vectordb import ChromaDB
 
 
 class Quizzer:
