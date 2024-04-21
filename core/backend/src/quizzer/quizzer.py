@@ -1,4 +1,6 @@
-from consts import GENERATE_QUESTION_PROMPT
+import json
+
+from consts import GENERATE_QUESTION_PROMPT, QUIZ_EXAMPLE_LOCATION, GENERATED_QUIZ_LOCATION
 from gptconnector import GPTConnector
 from quizzer.utils.random_context_creator import RandomContextCreator
 from database.vectordb import ChromaDB
@@ -11,17 +13,31 @@ class Quizzer:
         self.gpt = gpt
         pass
 
-    def generate_questions(self, pdf_name: str):
+    def generate_questions(self, pdf_name: str) -> dict:
         rcc = RandomContextCreator(chromadb=self.chromadb)
         context, ids = rcc.create_random_context(collection_name=pdf_name)
 
+        print(f"ids: {ids}")
+
+        with open(QUIZ_EXAMPLE_LOCATION, "r") as f:
+            example = f.read().replace("\n", "")
+
         with open(GENERATE_QUESTION_PROMPT, "r") as f:
             prompt = f.read().replace("\n", "")
-        prompt = prompt.format(context=context)
-        prompt = prompt.format(ids=ids)
+
+        print(f"prompt: {prompt}")
+
+        prompt = prompt.format(context=context, example=example, ids=ids)
+        print(f"prompt: {prompt}")
+
         answer = self.gpt.chat(prompt).content
 
+        with open(GENERATED_QUIZ_LOCATION, "w") as f:
+            f.write(answer)
+
         print(answer)
+
+        return answer
 
 
 

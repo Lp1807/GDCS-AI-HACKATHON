@@ -37,5 +37,3 @@ class RandomContextCreator:
         context = ". ".join(paragraphs)
 
         return context, ids
-
-

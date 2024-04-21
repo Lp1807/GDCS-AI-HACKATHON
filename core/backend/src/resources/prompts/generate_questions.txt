@@ -9,17 +9,7 @@ C: "Brussels",
 D: "Sidney"
 
 with "Paris" being the correct one, the output must be like this:
-{
-    "question": "What is the capital of France?",
-    "options": {
-      "A": "Rome",
-      "B": "Paris",
-      "C": "Brussels",
-      "D": "Sidney"
-    },
-  "correctOption": "B",
-  "contextIDs": ["123", "434", "224", "143"]
-}
+{example}
 
 where the contextIDs field are exactly the following: {ids}
 

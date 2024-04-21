@@ -12,5 +12,6 @@ class TestQuizzer(TestCase):
         gpt = GPTConnector()
         
         quizzer = Quizzer(chromaDB, gpt)
-        quizzer.generate_questions(TEST_PDF_SHORT_LOCATION)
+        pdf_name = TEST_PDF_SHORT_LOCATION.split("/")[-1]
+        quizzer.generate_questions(pdf_name)
 
