@@ -8,3 +8,25 @@ core/backend/src/__pycache__/gptconnector.cpython-312.pyc
 core/backend/src/__pycache__/consts.cpython-312.pyc
 
 /core/frontend/.angular/
+core/backend/src/__pycache__/connectors.cpython-311.pyc
+core/backend/src/__pycache__/consts.cpython-311.pyc
+core/backend/src/__pycache__/gptconnector.cpython-311.pyc
+core/backend/src/__pycache__/main.cpython-311.pyc
+core/backend/src/database/__pycache__/__init__.cpython-311.pyc
+core/backend/src/database/__pycache__/model.cpython-311.pyc
+core/backend/src/database/__pycache__/vectordb.cpython-311.pyc
+core/backend/src/paragraphs_extraction_pipeline/__pycache__/__init__.cpython-311.pyc
+core/backend/src/paragraphs_extraction_pipeline/__pycache__/paragraphs_extraction_pipeline.cpython-311.pyc
+core/backend/src/paragraphs_extraction_pipeline/utils/__pycache__/__init__.cpython-311.pyc
+core/backend/src/paragraphs_extraction_pipeline/utils/__pycache__/cleaner.cpython-311.pyc
+core/backend/src/paragraphs_extraction_pipeline/utils/__pycache__/paragraphs_adapter.cpython-311.pyc
+core/backend/src/paragraphs_extraction_pipeline/utils/__pycache__/pdf2text.cpython-311.pyc
+core/backend/src/quizzer/__pycache__/__init__.cpython-311.pyc
+core/backend/src/quizzer/__pycache__/quizzer.cpython-311.pyc
+core/backend/src/quizzer/utils/__pycache__/__init__.cpython-311.pyc
+core/backend/src/quizzer/utils/__pycache__/random_context_creator.cpython-311.pyc
+core/backend/src/routes/__pycache__/__init__.cpython-311.pyc
+core/backend/src/routes/__pycache__/routes.cpython-311.pyc
+core/frontend/angular.json
+core/frontend/.angular/cache/17.3.5/gerryfrontend/.tsbuildinfo
+core/frontend/.angular/cache/17.3.5/vite/deps/_metadata.json
