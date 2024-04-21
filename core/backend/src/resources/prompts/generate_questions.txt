@@ -1,3 +1,26 @@
-given the following context: '{context}' generate a question and four answer options. 3 of them have to be false, while 1 should be true.
+Given the following context: '{context}' generate a question and four answer options. 
+3 of them have to be false, while 1 should be true.
+The output must be given in a particular JSON format. 
+For instance, if the question is "What is the capital of France?" and the multiple choices
+are:
+A: "Rome",
+B: "Paris",
+C: "Brussels",
+D: "Sidney"
+
+with "Paris" being the correct one, the output must be like this:
+{
+    "question": "What is the capital of France?",
+    "options": {
+      "A": "Rome",
+      "B": "Paris",
+      "C": "Brussels",
+      "D": "Sidney"
+    },
+  "correctOption": "B",
+  "contextIDs": ["123", "434", "224", "143"]
+}
+
+where the contextIDs field is {ids}
 
 

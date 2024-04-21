@@ -18,6 +18,7 @@ class Quizzer:
         with open(GENERATE_QUESTION_PROMPT, "r") as f:
             prompt = f.read().replace("\n", "")
         prompt = prompt.format(context=context)
+        prompt = prompt.format(ids=ids)
         answer = self.gpt.chat(prompt).content
 
         print(answer)
