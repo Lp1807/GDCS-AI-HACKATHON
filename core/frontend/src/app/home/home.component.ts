@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {UploadService} from "../services/upload.service";
-import {response} from "express";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-home',
@@ -11,23 +10,27 @@ import {response} from "express";
 })
 export class HomeComponent {
 
-  constructor(
-    private uploadFileService: UploadService
-  ) {}
+  constructor(private http: HttpClient) {}
 
-
-  uploadFile(data: { [key: string]: any }){
-    this.uploadFileService.uploadFile(data).subscribe({
-      next: (response) => {
-        console.log("Success:", response)
-      },
-      error: (error) => {
-        console.error("Fail:", error)
-      }
-    })
+  onFileSelected(event: any) {
+    const file: File = event.target.files[0];
+    this.uploadFile(file);
   }
 
+  uploadFile(file: File) {
+    const formData: FormData = new FormData();
+    formData.append('file', file, file.name);
 
+    this.http.post('http://127.0.0.1:8080/upload/', formData)
+      .subscribe(
+        (response) => {
+          console.info('File uploaded successfully:', response);
+          // Handle successful upload here
+        },
+        (error) => {
+          console.error('Error uploading file:', error);
+          // Handle upload error here
+        }
+      );
+  }
 }
-
-

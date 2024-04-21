@@ -1,6 +1,6 @@
 from tqdm import tqdm
 
-from core.backend.src.gptconnector import GPTConnector
+from gptconnector import GPTConnector
 
 
 class Cleaner:

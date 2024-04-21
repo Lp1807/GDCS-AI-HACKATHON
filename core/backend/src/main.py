@@ -1,11 +1,36 @@
-from consts import TEST_PDF_LOCATION, TEST_PDF_SHORT_LOCATION
-from paragraphs_extraction_pipeline.paragraphs_extraction_pipeline import ParagraphsExtractionPipeline
+import importlib
+import pkgutil
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+origins = [
+    "http://localhost:4200",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Dynamically import all routers from the routes package
+package_name = "routes"
+package = importlib.import_module(package_name)
+for _, module_name, _ in pkgutil.iter_modules(package.__path__):
+    module = importlib.import_module(f"{package_name}.{module_name}")
+    if hasattr(module, "router"):
+        app.include_router(module.router)
 
 
-if __name__ == "__main__":
-    pdf_path = TEST_PDF_SHORT_LOCATION
-    print(f"pdf_path: {pdf_path}")
-    ParagraphsExtractionPipeline.run(pdf_path)
+@app.get("/")
+def read_root():
+    return {"Welcome to": "GDSC's Hackathon project"}
+
 
 
 

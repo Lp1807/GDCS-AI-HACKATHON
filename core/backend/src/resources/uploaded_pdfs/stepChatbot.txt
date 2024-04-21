@@ -1,0 +1,12 @@
+step 1 - carico foto --> gemini restituisce json
+step 2 - salvarsi in google storage json e usarlo come 1-step-history. diamo la possibilità di interrogare il json.
+step 3 - qdrant o faiss- Scrivo a Gerlando e vediamo se posso fare CRUD col suo metodo. qdrant e vector AI search. ha scritto API. 
+		 già implementato parzilamente nel nàotebook. ---> provo per prima.
+		 Mostrare foto fattura.
+
+
+
+
+
+
+Settimana del 18.

@@ -13,7 +13,7 @@ class Quizzer:
         self.gpt = gpt
         pass
 
-    def generate_questions(self, pdf_name: str) -> dict:
+    def generate_and_save_quiz(self, pdf_name: str) -> dict:
         rcc = RandomContextCreator(chromadb=self.chromadb)
         context, ids = rcc.create_random_context(collection_name=pdf_name)
 

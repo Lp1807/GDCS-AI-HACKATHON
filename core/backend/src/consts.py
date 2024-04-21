@@ -3,6 +3,7 @@ import os
 
 RESOURCES_LOCATION = os.path.join(os.path.dirname(__file__), 'resources')
 PROMPTS_LOCATION = os.path.join(RESOURCES_LOCATION, "prompts")
+UPLOADED_PDFS_DIRECTORY = os.path.join(RESOURCES_LOCATION, "uploaded_pdfs")
 TEST_PDF_SHORT_LOCATION = os.path.join(RESOURCES_LOCATION, "WW2_short.pdf")
 TEST_PDF_LOCATION = os.path.join(RESOURCES_LOCATION, "WW2.pdf")
 GENERATE_QUESTION_PROMPT = os.path.join(PROMPTS_LOCATION, "generate_questions.txt")

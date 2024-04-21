@@ -1,5 +1,5 @@
-from core.backend.src.consts import PARAGRAPHS_PER_PAGE
-from core.backend.src.database.model import Paragraph
+from consts import PARAGRAPHS_PER_PAGE
+from database.model import Paragraph
 
 
 class ParagraphsAdapter:

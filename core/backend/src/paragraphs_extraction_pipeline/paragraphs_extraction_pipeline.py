@@ -35,5 +35,4 @@ class ParagraphsExtractionPipeline:
         chromadb.create_collection(collection_name=pdf_name)
         chromadb.add_paragraphs(collection_name=pdf_name, paragraphs=pydantic_paragraphs)
 
-        quizzer = Quizzer(chromadb, gpt_connector)
-        quizzer.generate_questions(pdf_name=pdf_name)
+

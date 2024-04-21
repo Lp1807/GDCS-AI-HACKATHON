@@ -13,5 +13,5 @@ class TestQuizzer(TestCase):
         
         quizzer = Quizzer(chromaDB, gpt)
         pdf_name = TEST_PDF_SHORT_LOCATION.split("/")[-1]
-        quizzer.generate_questions(pdf_name)
+        quizzer.generate_and_save_quiz(pdf_name)
 

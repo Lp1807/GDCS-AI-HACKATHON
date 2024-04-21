@@ -3,7 +3,7 @@ import random
 import chromadb
 from chromadb.api.models import Collection
 
-from core.backend.src.database.model import Paragraph
+from database.model import Paragraph
 
 
 class ChromaDB:

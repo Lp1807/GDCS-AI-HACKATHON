@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UploadService {
-  url = 'http://127.0.0.1:8080/doctors/1';
+  url = 'http://127.0.0.1:8080/';
 
   constructor(private http: HttpClient) { }
 
