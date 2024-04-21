@@ -1,11 +1,11 @@
 {
-    "question": "During the Allied campaign in Sicily, what strategy did General Patton use to outflank German positions on the northern coastal road?",
+    "question": "What is the main tech stack used by William Bonvini in his Senior Software Engineer role at Sky Italia?",
     "options": {
-        "A": "Launching direct assaults on German strongholds",
-        "B": "Retreating and regrouping for a massive offensive",
-        "C": "Conducting a series of small amphibious end runs",
-        "D": "Deploying heavy armored divisions for a frontal attack"
+        "A": "MongoDB, Ruby, React, Unity",
+        "B": "GCP, Python, FastAPI, YoloV7, OpenCV, Angular, Scala, Neo4J",
+        "C": "Java, R, TensorFlow, Vue.js, PostgreSQL",
+        "D": "C++, C#, AWS, Flask, D3.js, Redis"
     },
-    "correctOption": "C",
-    "contextIDs": ["1521.5618822875167", "2291.3160339085325", "3891.2985244620763", "4289.335550636088", "6330.45191935458", "929.2048349747217", "9327.256763474874", "9529.305618960516"]
+    "correctOption": "B",
+    "contextIDs": ["2795.967627819878", "57.242175037341305", "980.3772378740832"]
 }
