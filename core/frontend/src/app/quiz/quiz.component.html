@@ -27,8 +27,8 @@
             class="w-5 h-5 absolute left-[-1px] top-[-1px] rounded-[1000px] border border-[#eeeff2]"
           ></div>
         </div>
-        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-gray-900">
-          Usable
+        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-gray-900" (click)="onOptionAClicked()">
+          {{optionA}}
         </p>
       </div>
       <div
@@ -39,8 +39,8 @@
             class="w-5 h-5 absolute left-[-1px] top-[-1px] rounded-[1000px] border border-[#eeeff2]"
           ></div>
         </div>
-        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-gray-900">
-          Understandable
+        <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-gray-900" (click)="onOptionBClicked()">
+          {{optionB}}
         </p>
       </div>
       <div
@@ -52,7 +52,7 @@
           ></div>
         </div>
         <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-gray-900">
-          Useful
+          {{optionC}}
         </p>
       </div>
       <div
@@ -64,14 +64,14 @@
           ></div>
         </div>
         <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-gray-900">
-          Findable
+          {{optionD}}
         </p>
       </div>
       <p class="absolute left-6 top-8 text-xs font-medium text-left text-gray-500">
         Question 2 of 10
       </p>
       <p class="w-[279px] absolute left-6 top-[63px] text-xl font-bold text-left text-gray-900">
-        An experience that is easy to use is said to be…
+        {{ question }}
       </p>
     </div>
   </div>

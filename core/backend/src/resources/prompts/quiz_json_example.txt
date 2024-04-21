@@ -1,4 +1,4 @@
-{
+[{
     "question": "What is the capital of France?",
     "options": {
       "A": "Rome",
@@ -8,4 +8,4 @@
     },
   "correctOption": "B",
   "contextIDs": ["123", "434", "224", "143"]
-}
+}]

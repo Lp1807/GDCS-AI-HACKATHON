@@ -21,13 +21,6 @@ def read_quiz():
         return json.loads(quiz.read())
 
 
-@app.get("/quiz/next")
-def next_question():
-    logger.info("next question...")
-    with open(GENERATED_QUIZ_LOCATION, "r") as quiz:
-        quiz = json.loads(quiz.read())
-        return quiz.pop(0)
-
 
 @app.post("/upload/")
 async def upload_file(file: UploadFile = File(...)):
@@ -60,3 +53,11 @@ async def gen_quiz():
         quizzer.generate_and_save_quiz(pdf_name=pdf_name)
 
         return JSONResponse(content={"message": "Quiz generated successfully."})
+
+
+@app.get("/quiz/{question_id}")
+def get_question(question_id: int):
+    with open(GENERATED_QUIZ_LOCATION, "r") as quiz:
+        quiz = json.loads(quiz.read())
+        return quiz[question_id]
+
