@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {NgIf} from "@angular/common";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-choose-topic',
@@ -17,7 +19,7 @@ export class ChooseTopicComponent {
 
 
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   onFileSelected(event: any) {
     const file: File = event.target.files[0];
@@ -33,12 +35,15 @@ export class ChooseTopicComponent {
         (response) => {
           console.info('File uploaded successfully:', response);
           this.uploadComplete = true;
-          // Handle successful upload here
         },
         (error) => {
           console.error('Error uploading file:', error);
           // Handle upload error here
         }
       );
+  }
+
+  goToQuiz(){
+    this.router.navigate(['/quiz']);
   }
 }

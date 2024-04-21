@@ -1,4 +1,4 @@
-<svg *ngIf="uploadComplete"  ></svg>
+
 
 <div class="w-[375px] h-[812px] relative overflow-hidden bg-white">
   <div class="w-[326px] h-[308px]">
@@ -43,7 +43,8 @@
             ></path>
           </svg>
           -->
-          <p
+          <img src="assets/success.png" *ngIf="uploadComplete"   alt="uploaded"/>
+          <p *ngIf="!uploadComplete"
             class="self-stretch flex-grow-0 flex-shrink-0 w-[262px] text-sm font-medium text-center"
           >
               <span
@@ -107,15 +108,30 @@
       </p>
     </div>
   </div>
-  <div
+  <button
     class="flex justify-center items-center w-[327px] h-14 absolute left-6 top-[706px] gap-2 px-4 py-2 rounded-[40px] bg-[#bdd3fa]"
     [class.bg-[#2a48e8]]="uploadComplete"
     [class.pointer-events-auto]="uploadComplete"
-  >
-    <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">
+    [disabled]="!uploadComplete"
+>
+    <p *ngIf="!uploadComplete" class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white">
       Generate my challenge
     </p>
-  </div>
+    <p *ngIf="uploadComplete" class="flex-grow-0 flex-shrink-0 text-base font-bold text-center text-white" (click)="goToQuiz">
+      Click here to start challenge
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
   <img
     src="assets/choose-topic.png"
     class="w-[286px] h-[219px] absolute left-[39px] top-[120px] object-cover"
