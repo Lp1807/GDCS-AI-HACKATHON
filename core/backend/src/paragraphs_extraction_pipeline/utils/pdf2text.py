@@ -2,9 +2,9 @@ import fitz
 from tqdm import tqdm
 
 
-class Extractor:
+class PDF2Text:
     @staticmethod
-    def pdf_to_string(input_pdf_path: str) -> str:
+    def pdf_to_string(input_pdf_path: str) -> list[str]:
         pdf_doc = fitz.open(input_pdf_path)
         text = []
 
@@ -19,6 +19,6 @@ class Extractor:
 
     @staticmethod
     def pdf_to_txt(input_pdf_path: str, output_txt_path: str) -> None:
-        text = Extractor.pdf_to_string(input_pdf_path)
+        text = PDF2Text.pdf_to_string(input_pdf_path)
         with open(output_txt_path, "w") as output_txt:
             output_txt.write(text)

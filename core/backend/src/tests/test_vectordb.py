@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from core.backend.src.model import Paragraph, ParagraphMetadata
-from core.backend.src.vectordb import ChromaDB
+from core.backend.src.database.model import Paragraph, ParagraphMetadata
+from core.backend.src.database.vectordb import ChromaDB
 
 
 class TestVectorDb(TestCase):

@@ -6,7 +6,7 @@ from uuid import uuid4
 from nicegui import Client, ui
 
 from core.backend.src.consts import TEST_PDF_LOCATION
-from core.backend.src.extractor import Extractor
+from core.backend.src.paragraphs_extraction_pipeline.utils.pdf2text import PDF2Text
 from core.backend.src.gptconnector import GPTConnector
 
 messages: List[Tuple[str, str, str, str]] = []
@@ -29,7 +29,7 @@ def display_history(own_id: str) -> None:
 async def chat_home(client: Client):
 
     def send_message() -> None:
-        extracted = Extractor.pdf_to_string(TEST_PDF_LOCATION)
+        extracted = PDF2Text.pdf_to_string(TEST_PDF_LOCATION)
         gpt_connector = GPTConnector()
         cleaned_text = gpt_connector.clean(extracted).content
 
