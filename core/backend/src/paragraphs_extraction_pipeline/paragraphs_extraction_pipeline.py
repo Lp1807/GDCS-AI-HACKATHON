@@ -1,12 +1,12 @@
 import json
 import os
 
-from core.backend.src.connectors import gpt_connector, chromadb
-from core.backend.src.consts import TEST_PDF_LOCATION, RESOURCES_LOCATION
-from core.backend.src.paragraphs_extraction_pipeline.utils.cleaner import Cleaner
-from core.backend.src.paragraphs_extraction_pipeline.utils.paragraphs_adapter import ParagraphsAdapter
-from core.backend.src.paragraphs_extraction_pipeline.utils.pdf2text import PDF2Text
-from core.backend.src.quizzer.quizzer import Quizzer
+from connectors import gpt_connector, chromadb
+from consts import TEST_PDF_LOCATION, RESOURCES_LOCATION
+from paragraphs_extraction_pipeline.utils.cleaner import Cleaner
+from paragraphs_extraction_pipeline.utils.paragraphs_adapter import ParagraphsAdapter
+from paragraphs_extraction_pipeline.utils.pdf2text import PDF2Text
+from quizzer.quizzer import Quizzer
 
 
 class ParagraphsExtractionPipeline:
