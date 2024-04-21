@@ -15,29 +15,36 @@ class Quizzer:
 
     def generate_and_save_quiz(self, pdf_name: str) -> dict:
         rcc = RandomContextCreator(chromadb=self.chromadb)
-        context, ids = rcc.create_random_context(collection_name=pdf_name)
 
-        print(f"ids: {ids}")
+        answers = []
+        for i in range(0, 10):
+            context, ids = rcc.create_random_context(collection_name=pdf_name)
 
-        with open(QUIZ_EXAMPLE_LOCATION, "r") as f:
-            example = f.read().replace("\n", "")
+            print(f"ids: {ids}")
 
-        with open(GENERATE_QUESTION_PROMPT, "r") as f:
-            prompt = f.read().replace("\n", "")
+            with open(QUIZ_EXAMPLE_LOCATION, "r") as f:
+                example = f.read().replace("\n", "")
 
-        print(f"prompt: {prompt}")
+            with open(GENERATE_QUESTION_PROMPT, "r") as f:
+                prompt = f.read().replace("\n", "")
 
-        prompt = prompt.format(context=context, example=example, ids=ids)
-        print(f"prompt: {prompt}")
+            print(f"prompt: {prompt}")
 
-        answer = self.gpt.chat(prompt).content
+            prompt = prompt.format(context=context, example=example, ids=ids)
+            print(f"prompt: {prompt}")
+
+            answer = self.gpt.chat(prompt).content
+
+            answers.append(answer)
+
+        answers = "[" + ", ".join(answers) + "]"
 
         with open(GENERATED_QUIZ_LOCATION, "w") as f:
-            f.write(answer)
+            f.write(answers)
 
-        print(answer)
+        print(answers)
 
-        return answer
+        return answers
 
 
 

@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
 })
 export class ChooseTopicComponent {
     uploadComplete = false; // Add this line
+    fileName = ''; // Add this line
 
 
 
@@ -28,6 +29,7 @@ export class ChooseTopicComponent {
 
   uploadFile(file: File) {
     const formData: FormData = new FormData();
+    this.fileName = file.name
     formData.append('file', file, file.name);
 
     this.http.post('http://127.0.0.1:8080/upload/', formData)
@@ -44,6 +46,7 @@ export class ChooseTopicComponent {
   }
 
   goToQuiz(){
+    this.http.post('http://localhost:8080/genQuiz/', this.fileName)
     this.router.navigate(['/quiz']);
   }
 }

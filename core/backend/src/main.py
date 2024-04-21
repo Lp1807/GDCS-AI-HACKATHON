@@ -4,6 +4,11 @@ import pkgutil
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from connectors import gpt_connector, chromadb
+from consts import TEST_PDF_SHORT_LOCATION
+from paragraphs_ingester.paragraphs_ingester import ParagraphsIngester
+from quizzer.quizzer import Quizzer
+
 app = FastAPI()
 
 origins = [
@@ -32,5 +37,13 @@ def read_root():
     return {"Welcome to": "GDSC's Hackathon project"}
 
 
+if __name__ == "__main__":
+
+    file_path = TEST_PDF_SHORT_LOCATION
+    ingester = ParagraphsIngester()
+    pdf_name = file_path.split("/")[-1]
+    ingester.run(file_path)
+    quizzer = Quizzer(chromadb, gpt_connector)
+    quizzer.generate_and_save_quiz(pdf_name)
 
 

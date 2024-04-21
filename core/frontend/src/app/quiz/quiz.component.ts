@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RouterOutlet} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
 import {QuizQuestion} from "../models/quiz-question";
@@ -14,7 +14,7 @@ import {QuizQuestionService} from "../services/quiz.service";
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css'
 })
-export class QuizComponent {
+export class QuizComponent implements OnInit{
   givenAnswer = "";
 
   constructor(private http: HttpClient, private quizQuestionService: QuizQuestionService,
@@ -27,7 +27,7 @@ export class QuizComponent {
   optionC = ""
   optionD = ""
 
-  onNgInit(){
+  ngOnInit(){
     this.getQuestionData()
   }
 

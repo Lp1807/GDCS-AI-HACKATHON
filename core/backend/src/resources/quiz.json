@@ -1,11 +1,111 @@
-{
-    "question": "What is the main tech stack used by William Bonvini in his Senior Software Engineer role at Sky Italia?",
+[[
+    {
+        "question": "What was the large Italian island targeted by the Allies after the Casablanca Conference in January 1943?",
+        "options": {
+            "A": "Corsica",
+            "B": "Sardinia",
+            "C": "Sicily",
+            "D": "Crete"
+        },
+        "correctOption": "C",
+        "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+    }
+], [
+    {
+        "question": "What famous meeting took place in Casablanca in January 1943 during World War II?",
+        "options": {
+            "A": "Potsdam Conference",
+            "B": "Berlin Congress",
+            "C": "Casablanca Summit",
+            "D": "Yalta Conference"
+        },
+        "correctOption": "C",
+        "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+    }
+], [{
+    "question": "What major Italian island was the next target after the Casablanca Conference in World War II?",
     "options": {
-        "A": "MongoDB, Ruby, React, Unity",
-        "B": "GCP, Python, FastAPI, YoloV7, OpenCV, Angular, Scala, Neo4J",
-        "C": "Java, R, TensorFlow, Vue.js, PostgreSQL",
-        "D": "C++, C#, AWS, Flask, D3.js, Redis"
+        "A": "Crete",
+        "B": "Cyprus",
+        "C": "Sicily",
+        "D": "Malta"
+    },
+    "correctOption": "C",
+    "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+}], [{
+    "question": "Who were the leaders involved in deciding the next target after the Casablanca Conference?",
+    "options": {
+        "A": "President Roosevelt",
+        "B": "Prime Minister Churchill",
+        "C": "General Patton",
+        "D": "Sergeant Smith"
     },
     "correctOption": "B",
-    "contextIDs": ["2795.967627819878", "57.242175037341305", "980.3772378740832"]
-}
+    "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+}], [{
+    "question": "Who were the leaders who decided that the large Italian island of Sicily would be the next target during World War II?",
+    "options": {
+        "A": "Stalin, Mussolini, and Hirohito",
+        "B": "Churchill, Roosevelt, and Stalin",
+        "C": "Hitler, Mussolini, and Roosevelt",
+        "D": "Roosevelt, Churchill, and the Combined Chiefs of Staff"
+    },
+    "correctOption": "D",
+    "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+}], [
+  {
+    "question": "Which major Italian island was the target discussed during the meeting in Casablanca in January 1943?",
+    "options": {
+      "A": "Sardinia",
+      "B": "Crete",
+      "C": "Sicily",
+      "D": "Corsica"
+    },
+    "correctOption": "C",
+    "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+  }
+], [{
+    "question": "Why is World War II highly relevant today?",
+    "options": {
+        "A": "Because it was a peaceful conflict",
+        "B": "Because it was irrelevant to global history",
+        "C": "Because it offers valuable lessons about military preparedness and global strategy",
+        "D": "Because it was a fictional event"
+    },
+    "correctOption": "C",
+    "contextIDs": ["406.2643254270914", "734.1853176728422", "572.8820595046172", "901.3947057151736"]
+}], [
+    {
+        "question": "What was the next target after the Casablanca Conference in January 1943?",
+        "options": {
+            "A": "Hawaii",
+            "B": "Japan",
+            "C": "Sicily",
+            "D": "Australia"
+        },
+        "correctOption": "C",
+        "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+    }
+], [
+    {
+        "question": "What island was chosen as the next target after the Casablanca Conference in January 1943?",
+        "options": {
+            "A": "Crete",
+            "B": "Sicily",
+            "C": "Malta",
+            "D": "Corsica"
+        },
+        "correctOption": "B",
+        "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+    }
+], [{
+    "question": "Which large Italian island was decided to be the next target during the Casablanca Conference in 1943?",
+    "options": {
+        "A": "Corsica",
+        "B": "Sardinia",
+        "C": "Sicily",
+        "D": "Capri"
+    },
+    "correctOption": "C",
+    "contextIDs": ["1315.8622843674257", "35.18970200449334", "842.5116112163158", "886.0999324648875"]
+}]]
